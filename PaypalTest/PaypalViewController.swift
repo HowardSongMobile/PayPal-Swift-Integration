@@ -14,12 +14,12 @@ import BraintreeCard
 import BraintreePayPal
 
 //It is a demo for integrating Braintree SDK with iOS app
-//WORK well for paypal checkout
+//for paypal checkout
 //
 class PaypalViewController: UIViewController, BTViewControllerPresentingDelegate {
     
     //use your key in Braintree dashboard
-    let toKinizationKey = "sandbox_d5h2jy54_8dhhtr3rhfwbx7p4"
+    let toKinizationKey = "your key"
     var braintreeClient: BTAPIClient?
     var transaction_id: String? = nil
     
@@ -54,7 +54,6 @@ class PaypalViewController: UIViewController, BTViewControllerPresentingDelegate
         request.httpMethod = "POST"
         
         let params = ["payment_method_nonce":"\(paymentMethodNonce)", "amount":amount] as [String : Any]
-        
         let prettyPrinted:Bool = false
         let options = prettyPrinted ?
             JSONSerialization.WritingOptions.prettyPrinted : JSONSerialization.WritingOptions(rawValue: 0)

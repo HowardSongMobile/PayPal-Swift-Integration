@@ -19,8 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    //04/08/2019    com.almobion.FlyerOnFly.payments
     [BTAppSwitch setReturnURLScheme:@"com.almobion.PaypalTest.payments"];
     
     return YES;
