@@ -1,4 +1,4 @@
-//javascript for node.js sever
+//javascript for node.js server
 router.post('/paypal', function (req, res) {
     var transactionErrors;
     var amount = req.body.amount;
