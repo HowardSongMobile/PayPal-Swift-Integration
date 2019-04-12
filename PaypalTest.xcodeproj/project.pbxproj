@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E462A1E3225C1AE100D9BA43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E462A1E2225C1AE100D9BA43 /* AppDelegate.m */; };
+		E462A1E6225C1AE100D9BA43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E462A1E5225C1AE100D9BA43 /* ViewController.m */; };
+		E462A1E9225C1AE100D9BA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462A1E7225C1AE100D9BA43 /* Main.storyboard */; };
+		E462A1EC225C1AE100D9BA43 /* PaypalTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E462A1EA225C1AE100D9BA43 /* PaypalTest.xcdatamodeld */; };
+		E462A1EE225C1AEA00D9BA43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E462A1ED225C1AEA00D9BA43 /* Assets.xcassets */; };
+		E462A1F1225C1AEA00D9BA43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E462A1EF225C1AEA00D9BA43 /* LaunchScreen.storyboard */; };
+		E462A1F4225C1AEA00D9BA43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E462A1F3225C1AEA00D9BA43 /* main.m */; };
+		E462A20A225C1CDF00D9BA43 /* BraintreeCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FA225C1C9200D9BA43 /* BraintreeCard.framework */; };
+		E462A20B225C1CDF00D9BA43 /* BraintreeCard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FA225C1C9200D9BA43 /* BraintreeCard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A20C225C1CDF00D9BA43 /* BraintreeUnionPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FB225C1CAB00D9BA43 /* BraintreeUnionPay.framework */; };
+		E462A20D225C1CDF00D9BA43 /* BraintreeUnionPay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FB225C1CAB00D9BA43 /* BraintreeUnionPay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A20E225C1CDF00D9BA43 /* BraintreePaymentFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FC225C1CC500D9BA43 /* BraintreePaymentFlow.framework */; };
+		E462A20F225C1CDF00D9BA43 /* BraintreePaymentFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FC225C1CC500D9BA43 /* BraintreePaymentFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A210225C1CDF00D9BA43 /* BraintreeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FD225C1CD800D9BA43 /* BraintreeUI.framework */; };
+		E462A211225C1CDF00D9BA43 /* BraintreeUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FD225C1CD800D9BA43 /* BraintreeUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A212225C1CDF00D9BA43 /* BraintreeUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FE225C1CDA00D9BA43 /* BraintreeUIKit.framework */; };
+		E462A213225C1CDF00D9BA43 /* BraintreeUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FE225C1CDA00D9BA43 /* BraintreeUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A214225C1CDF00D9BA43 /* BraintreeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FF225C1CDC00D9BA43 /* BraintreeCore.framework */; };
+		E462A215225C1CDF00D9BA43 /* BraintreeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A1FF225C1CDC00D9BA43 /* BraintreeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A216225C1CDF00D9BA43 /* Braintree3DSecure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A200225C1CDD00D9BA43 /* Braintree3DSecure.framework */; };
+		E462A217225C1CDF00D9BA43 /* Braintree3DSecure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A200225C1CDD00D9BA43 /* Braintree3DSecure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A218225C1CDF00D9BA43 /* PayPalOneTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A201225C1CDE00D9BA43 /* PayPalOneTouch.framework */; };
+		E462A219225C1CDF00D9BA43 /* PayPalOneTouch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A201225C1CDE00D9BA43 /* PayPalOneTouch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A21A225C1CE000D9BA43 /* BraintreeAmericanExpress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A202225C1CDE00D9BA43 /* BraintreeAmericanExpress.framework */; };
+		E462A21B225C1CE000D9BA43 /* BraintreeAmericanExpress.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A202225C1CDE00D9BA43 /* BraintreeAmericanExpress.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A21C225C1CE000D9BA43 /* BraintreeVenmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A203225C1CDE00D9BA43 /* BraintreeVenmo.framework */; };
+		E462A21D225C1CE000D9BA43 /* BraintreeVenmo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A203225C1CDE00D9BA43 /* BraintreeVenmo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A21E225C1CE000D9BA43 /* BraintreeDataCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A204225C1CDE00D9BA43 /* BraintreeDataCollector.framework */; };
+		E462A21F225C1CE000D9BA43 /* BraintreeDataCollector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A204225C1CDE00D9BA43 /* BraintreeDataCollector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A220225C1CE000D9BA43 /* PayPalDataCollector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A205225C1CDE00D9BA43 /* PayPalDataCollector.framework */; };
+		E462A221225C1CE000D9BA43 /* PayPalDataCollector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A205225C1CDE00D9BA43 /* PayPalDataCollector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A222225C1CE000D9BA43 /* PayPalUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A206225C1CDE00D9BA43 /* PayPalUtils.framework */; };
+		E462A223225C1CE000D9BA43 /* PayPalUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A206225C1CDE00D9BA43 /* PayPalUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A224225C1CE000D9BA43 /* BraintreeApplePay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A207225C1CDF00D9BA43 /* BraintreeApplePay.framework */; };
+		E462A225225C1CE000D9BA43 /* BraintreeApplePay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A207225C1CDF00D9BA43 /* BraintreeApplePay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A226225C1CE000D9BA43 /* BraintreeDropIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A208225C1CDF00D9BA43 /* BraintreeDropIn.framework */; };
+		E462A227225C1CE000D9BA43 /* BraintreeDropIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A208225C1CDF00D9BA43 /* BraintreeDropIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A228225C1CE000D9BA43 /* BraintreePayPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E462A209225C1CDF00D9BA43 /* BraintreePayPal.framework */; };
+		E462A229225C1CE000D9BA43 /* BraintreePayPal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E462A209225C1CDF00D9BA43 /* BraintreePayPal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E462A22D225C1DAA00D9BA43 /* PaypalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E462A22C225C1DAA00D9BA43 /* PaypalViewController.swift */; };
+		E462A29722611FA500D9BA43 /* index.js in Resources */ = {isa = PBXBuildFile; fileRef = E462A29622611FA500D9BA43 /* index.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E462A22A225C1CE000D9BA43 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E462A219225C1CDF00D9BA43 /* PayPalOneTouch.framework in Embed Frameworks */,
+				E462A223225C1CE000D9BA43 /* PayPalUtils.framework in Embed Frameworks */,
+				E462A221225C1CE000D9BA43 /* PayPalDataCollector.framework in Embed Frameworks */,
+				E462A217225C1CDF00D9BA43 /* Braintree3DSecure.framework in Embed Frameworks */,
+				E462A227225C1CE000D9BA43 /* BraintreeDropIn.framework in Embed Frameworks */,
+				E462A20D225C1CDF00D9BA43 /* BraintreeUnionPay.framework in Embed Frameworks */,
+				E462A225225C1CE000D9BA43 /* BraintreeApplePay.framework in Embed Frameworks */,
+				E462A21D225C1CE000D9BA43 /* BraintreeVenmo.framework in Embed Frameworks */,
+				E462A229225C1CE000D9BA43 /* BraintreePayPal.framework in Embed Frameworks */,
+				E462A21B225C1CE000D9BA43 /* BraintreeAmericanExpress.framework in Embed Frameworks */,
+				E462A20B225C1CDF00D9BA43 /* BraintreeCard.framework in Embed Frameworks */,
+				E462A215225C1CDF00D9BA43 /* BraintreeCore.framework in Embed Frameworks */,
+				E462A21F225C1CE000D9BA43 /* BraintreeDataCollector.framework in Embed Frameworks */,
+				E462A20F225C1CDF00D9BA43 /* BraintreePaymentFlow.framework in Embed Frameworks */,
+				E462A211225C1CDF00D9BA43 /* BraintreeUI.framework in Embed Frameworks */,
+				E462A213225C1CDF00D9BA43 /* BraintreeUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E462A1DE225C1AE100D9BA43 /* PaypalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaypalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E462A1E1225C1AE100D9BA43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E462A1E2225C1AE100D9BA43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E462A1E4225C1AE100D9BA43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E462A1E5225C1AE100D9BA43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E462A1E8225C1AE100D9BA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E462A1EB225C1AE100D9BA43 /* PaypalTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PaypalTest.xcdatamodel; sourceTree = "<group>"; };
+		E462A1ED225C1AEA00D9BA43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E462A1F0225C1AEA00D9BA43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E462A1F2225C1AEA00D9BA43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E462A1F3225C1AEA00D9BA43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E462A1FA225C1C9200D9BA43 /* BraintreeCard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeCard.framework; sourceTree = "<group>"; };
+		E462A1FB225C1CAB00D9BA43 /* BraintreeUnionPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeUnionPay.framework; sourceTree = "<group>"; };
+		E462A1FC225C1CC500D9BA43 /* BraintreePaymentFlow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreePaymentFlow.framework; sourceTree = "<group>"; };
+		E462A1FD225C1CD800D9BA43 /* BraintreeUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeUI.framework; sourceTree = "<group>"; };
+		E462A1FE225C1CDA00D9BA43 /* BraintreeUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeUIKit.framework; sourceTree = "<group>"; };
+		E462A1FF225C1CDC00D9BA43 /* BraintreeCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeCore.framework; sourceTree = "<group>"; };
+		E462A200225C1CDD00D9BA43 /* Braintree3DSecure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Braintree3DSecure.framework; sourceTree = "<group>"; };
+		E462A201225C1CDE00D9BA43 /* PayPalOneTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayPalOneTouch.framework; sourceTree = "<group>"; };
+		E462A202225C1CDE00D9BA43 /* BraintreeAmericanExpress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeAmericanExpress.framework; sourceTree = "<group>"; };
+		E462A203225C1CDE00D9BA43 /* BraintreeVenmo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeVenmo.framework; sourceTree = "<group>"; };
+		E462A204225C1CDE00D9BA43 /* BraintreeDataCollector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeDataCollector.framework; sourceTree = "<group>"; };
+		E462A205225C1CDE00D9BA43 /* PayPalDataCollector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayPalDataCollector.framework; sourceTree = "<group>"; };
+		E462A206225C1CDE00D9BA43 /* PayPalUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayPalUtils.framework; sourceTree = "<group>"; };
+		E462A207225C1CDF00D9BA43 /* BraintreeApplePay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeApplePay.framework; sourceTree = "<group>"; };
+		E462A208225C1CDF00D9BA43 /* BraintreeDropIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreeDropIn.framework; sourceTree = "<group>"; };
+		E462A209225C1CDF00D9BA43 /* BraintreePayPal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BraintreePayPal.framework; sourceTree = "<group>"; };
+		E462A22B225C1DAA00D9BA43 /* PaypalTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaypalTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		E462A22C225C1DAA00D9BA43 /* PaypalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypalViewController.swift; sourceTree = "<group>"; };
+		E462A29622611FA500D9BA43 /* index.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = index.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E462A1DB225C1AE100D9BA43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E462A218225C1CDF00D9BA43 /* PayPalOneTouch.framework in Frameworks */,
+				E462A222225C1CE000D9BA43 /* PayPalUtils.framework in Frameworks */,
+				E462A220225C1CE000D9BA43 /* PayPalDataCollector.framework in Frameworks */,
+				E462A216225C1CDF00D9BA43 /* Braintree3DSecure.framework in Frameworks */,
+				E462A226225C1CE000D9BA43 /* BraintreeDropIn.framework in Frameworks */,
+				E462A20C225C1CDF00D9BA43 /* BraintreeUnionPay.framework in Frameworks */,
+				E462A224225C1CE000D9BA43 /* BraintreeApplePay.framework in Frameworks */,
+				E462A21C225C1CE000D9BA43 /* BraintreeVenmo.framework in Frameworks */,
+				E462A228225C1CE000D9BA43 /* BraintreePayPal.framework in Frameworks */,
+				E462A21A225C1CE000D9BA43 /* BraintreeAmericanExpress.framework in Frameworks */,
+				E462A20A225C1CDF00D9BA43 /* BraintreeCard.framework in Frameworks */,
+				E462A214225C1CDF00D9BA43 /* BraintreeCore.framework in Frameworks */,
+				E462A21E225C1CE000D9BA43 /* BraintreeDataCollector.framework in Frameworks */,
+				E462A20E225C1CDF00D9BA43 /* BraintreePaymentFlow.framework in Frameworks */,
+				E462A210225C1CDF00D9BA43 /* BraintreeUI.framework in Frameworks */,
+				E462A212225C1CDF00D9BA43 /* BraintreeUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E462A1D5225C1AE100D9BA43 = {
+			isa = PBXGroup;
+			children = (
+				E462A1E0225C1AE100D9BA43 /* PaypalTest */,
+				E462A200225C1CDD00D9BA43 /* Braintree3DSecure.framework */,
+				E462A202225C1CDE00D9BA43 /* BraintreeAmericanExpress.framework */,
+				E462A207225C1CDF00D9BA43 /* BraintreeApplePay.framework */,
+				E462A1FA225C1C9200D9BA43 /* BraintreeCard.framework */,
+				E462A1FF225C1CDC00D9BA43 /* BraintreeCore.framework */,
+				E462A204225C1CDE00D9BA43 /* BraintreeDataCollector.framework */,
+				E462A208225C1CDF00D9BA43 /* BraintreeDropIn.framework */,
+				E462A1FC225C1CC500D9BA43 /* BraintreePaymentFlow.framework */,
+				E462A209225C1CDF00D9BA43 /* BraintreePayPal.framework */,
+				E462A1FD225C1CD800D9BA43 /* BraintreeUI.framework */,
+				E462A1FE225C1CDA00D9BA43 /* BraintreeUIKit.framework */,
+				E462A1FB225C1CAB00D9BA43 /* BraintreeUnionPay.framework */,
+				E462A203225C1CDE00D9BA43 /* BraintreeVenmo.framework */,
+				E462A205225C1CDE00D9BA43 /* PayPalDataCollector.framework */,
+				E462A201225C1CDE00D9BA43 /* PayPalOneTouch.framework */,
+				E462A206225C1CDE00D9BA43 /* PayPalUtils.framework */,
+				E462A1DF225C1AE100D9BA43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E462A1DF225C1AE100D9BA43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E462A1DE225C1AE100D9BA43 /* PaypalTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E462A1E0225C1AE100D9BA43 /* PaypalTest */ = {
+			isa = PBXGroup;
+			children = (
+				E462A1E1225C1AE100D9BA43 /* AppDelegate.h */,
+				E462A1E2225C1AE100D9BA43 /* AppDelegate.m */,
+				E462A1E4225C1AE100D9BA43 /* ViewController.h */,
+				E462A1E5225C1AE100D9BA43 /* ViewController.m */,
+				E462A22C225C1DAA00D9BA43 /* PaypalViewController.swift */,
+				E462A1E7225C1AE100D9BA43 /* Main.storyboard */,
+				E462A1ED225C1AEA00D9BA43 /* Assets.xcassets */,
+				E462A1EF225C1AEA00D9BA43 /* LaunchScreen.storyboard */,
+				E462A1F2225C1AEA00D9BA43 /* Info.plist */,
+				E462A1F3225C1AEA00D9BA43 /* main.m */,
+				E462A1EA225C1AE100D9BA43 /* PaypalTest.xcdatamodeld */,
+				E462A22B225C1DAA00D9BA43 /* PaypalTest-Bridging-Header.h */,
+				E462A29622611FA500D9BA43 /* index.js */,
+			);
+			path = PaypalTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E462A1DD225C1AE100D9BA43 /* PaypalTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E462A1F7225C1AEA00D9BA43 /* Build configuration list for PBXNativeTarget "PaypalTest" */;
+			buildPhases = (
+				E462A1DA225C1AE100D9BA43 /* Sources */,
+				E462A1DB225C1AE100D9BA43 /* Frameworks */,
+				E462A1DC225C1AE100D9BA43 /* Resources */,
+				E462A22A225C1CE000D9BA43 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaypalTest;
+			productName = PaypalTest;
+			productReference = E462A1DE225C1AE100D9BA43 /* PaypalTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E462A1D6225C1AE100D9BA43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Song;
+				TargetAttributes = {
+					E462A1DD225C1AE100D9BA43 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = E462A1D9225C1AE100D9BA43 /* Build configuration list for PBXProject "PaypalTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E462A1D5225C1AE100D9BA43;
+			productRefGroup = E462A1DF225C1AE100D9BA43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E462A1DD225C1AE100D9BA43 /* PaypalTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E462A1DC225C1AE100D9BA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E462A1F1225C1AEA00D9BA43 /* LaunchScreen.storyboard in Resources */,
+				E462A1EE225C1AEA00D9BA43 /* Assets.xcassets in Resources */,
+				E462A1E9225C1AE100D9BA43 /* Main.storyboard in Resources */,
+				E462A29722611FA500D9BA43 /* index.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E462A1DA225C1AE100D9BA43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E462A1EC225C1AE100D9BA43 /* PaypalTest.xcdatamodeld in Sources */,
+				E462A1E6225C1AE100D9BA43 /* ViewController.m in Sources */,
+				E462A1F4225C1AEA00D9BA43 /* main.m in Sources */,
+				E462A22D225C1DAA00D9BA43 /* PaypalViewController.swift in Sources */,
+				E462A1E3225C1AE100D9BA43 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E462A1E7225C1AE100D9BA43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E462A1E8225C1AE100D9BA43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E462A1EF225C1AEA00D9BA43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E462A1F0225C1AEA00D9BA43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E462A1F5225C1AEA00D9BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E462A1F6225C1AEA00D9BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E462A1F8225C1AEA00D9BA43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TP5XU9V42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PaypalTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almobion.PaypalTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaypalTest/PaypalTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E462A1F9225C1AEA00D9BA43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TP5XU9V42;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PaypalTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.almobion.PaypalTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PaypalTest/PaypalTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E462A1D9225C1AE100D9BA43 /* Build configuration list for PBXProject "PaypalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E462A1F5225C1AEA00D9BA43 /* Debug */,
+				E462A1F6225C1AEA00D9BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E462A1F7225C1AEA00D9BA43 /* Build configuration list for PBXNativeTarget "PaypalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E462A1F8225C1AEA00D9BA43 /* Debug */,
+				E462A1F9225C1AEA00D9BA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E462A1EA225C1AE100D9BA43 /* PaypalTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E462A1EB225C1AE100D9BA43 /* PaypalTest.xcdatamodel */,
+			);
+			currentVersion = E462A1EB225C1AE100D9BA43 /* PaypalTest.xcdatamodel */;
+			path = PaypalTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E462A1D6225C1AE100D9BA43 /* Project object */;
+}
